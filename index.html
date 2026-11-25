@@ -667,7 +667,7 @@ body.shot .pi{min-height:170px}
 .tiers{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:40px}
 .tier{border:1px solid var(--line);border-radius:20px;padding:30px;background:var(--surface);display:flex;flex-direction:column;gap:14px}
 .tier .nm{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.tier .pr{font-size:34px;font-weight:600;letter-spacing:-.02em}
+.tier .tpr{font-size:34px;font-weight:600;letter-spacing:-.02em}
 .tier ul{list-style:none;display:grid;gap:9px;color:var(--muted);font-size:15px}
 .tier li::before{content:"·";margin-right:8px;color:var(--text)}
 .tier .btn{align-self:flex-start;margin-top:auto}
@@ -761,6 +761,8 @@ footer .logo .lg{height:46px}
 .btn-sm{white-space:nowrap}
 .gw .gb{fill-opacity:1}
 @media (max-width:560px){.gw{overflow-x:auto;-webkit-overflow-scrolling:touch}.gw svg{min-width:720px}.gw::after{content:"scroll →";display:block;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:6px}}
+.tier{text-align:left}
+.tier .tpr .tagp{font-size:10.5px;font-weight:400}
 
 </style>
 </head>
@@ -1096,8 +1098,8 @@ footer .logo .lg{height:46px}
 <svg class="bigate" viewBox="0 0 240 240" aria-hidden="true"><rect class="p gp1" x="90" y="40" width="22" height="170" rx="5"/><rect class="p gp2" x="128" y="40" width="22" height="170" rx="5"/><circle cx="120" cy="22" r="8" fill="#5BB98C"/><circle class="dot" cx="120" cy="125" r="8"/></svg></div></div></section></main><main class="page" data-page="pricing" data-title="Pricing">
 <section class="phero center"><div class="wrap"><div class="eyebrow rv">Pricing</div><h1 class="rv">Simple to <span class="acc">start.</span></h1><p class="lead rv">Pricing is being finalised. Request access and we will walk you through it.</p>
 <div class="tiers">
-<div class="tier rv"><span class="nm">Self-hosted</span><div class="pr">[Price TBD] <span class="tagp">PLACEHOLDER</span></div><p class="tdesc">The full guardian, in your VPC.</p><ul><li>Watches, Understands, Protects, Reports</li><li>Postgres and MySQL</li><li>Bring your own model and keys</li><li>Roles and Google SSO</li><li>Per-user audit log, 90 days</li><li>[Support terms TBD] <span class="tagp">PLACEHOLDER</span></li></ul><a class="btn btn-primary" href="#/access">Request access</a></div>
-<div class="tier rv" style="--d:1"><span class="nm">Enterprise</span><div class="pr">Consultation</div><p class="tdesc">The same product, with our team beside yours.</p><ul><li>Everything in Self-hosted</li><li>Install and tuning on your workload</li><li>Roles, protected columns and digests set up with you</li><li>[Terms TBD] <span class="tagp">PLACEHOLDER</span></li></ul><a class="btn btn-ghost" href="#/access/demo">Book a demo</a></div></div></div></section>
+<div class="tier rv"><span class="nm">Self-hosted</span><div class="tpr">[Price TBD] <span class="tagp">PLACEHOLDER</span></div><p class="tdesc">The full guardian, in your VPC.</p><ul><li>Watches, Understands, Protects, Reports</li><li>Postgres and MySQL</li><li>Bring your own model and keys</li><li>Roles and Google SSO</li><li>Per-user audit log, 90 days</li><li>[Support terms TBD] <span class="tagp">PLACEHOLDER</span></li></ul><a class="btn btn-primary" href="#/access">Request access</a></div>
+<div class="tier rv" style="--d:1"><span class="nm">Enterprise</span><div class="tpr">Consultation</div><p class="tdesc">The same product, with our team beside yours.</p><ul><li>Everything in Self-hosted</li><li>Install and tuning on your workload</li><li>Roles, protected columns and digests set up with you</li><li>[Terms TBD] <span class="tagp">PLACEHOLDER</span></li></ul><a class="btn btn-ghost" href="#/access/demo">Book a demo</a></div></div></div></section>
 <section class="sec" style="padding-top:0"><div class="wrap"><div class="faq">
 <details class="rv" open><summary>Where does DeepSQL run?</summary><p>Inside your own infrastructure: a Linux box, an EC2 instance or a container in your VPC. Database credentials stay in an AES-GCM encrypted vault.</p></details>
 <details class="rv"><summary>Which databases does it guard?</summary><p>PostgreSQL and MySQL, including databases behind a bastion over an SSH tunnel.</p></details>
